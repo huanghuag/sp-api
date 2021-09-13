@@ -31,6 +31,7 @@ class Client {
   private function headerValue($header)
   {
       return \GuzzleHttp\Psr7\Header::parse($header)[0];
+      
   }
 
   public function send($uri, $requestOptions = [])
